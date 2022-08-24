@@ -10,7 +10,8 @@ public class CYKParser {
     }
 
     public void TestString(String inputString){
-        String[] a = inputString.split("");
+
+        String[] a = inputString.split(grammar.isSentence?" ":"");
 
         int n = a.length;
         List<Symbol>[][] T = new List[n+1][n+1];
@@ -60,7 +61,15 @@ public class CYKParser {
     }
 
     static void printTable (List<Symbol>[][] T) {
+        System.out.print("    ");
+        for (int j = 1; j < T[0].length; j++) {
+            System.out.print("["+j +"]             ");
+
+        }
+        System.out.println();
+
         for (int i = 0; i < T.length-1; i++) {
+            System.out.print("["+i+"] ");
             for (int j = 1; j < T[i].length; j++) {
                 String items = T[i][j].toString();
 

@@ -1,4 +1,5 @@
 baaba language
+word
 A - a
 B - b
 C - a

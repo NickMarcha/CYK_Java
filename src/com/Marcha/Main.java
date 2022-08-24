@@ -4,6 +4,7 @@ package com.Marcha;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Main {
@@ -23,7 +24,6 @@ public class Main {
             System.out.println(GrammarFile.getAbsoluteFile());
 
             Scanner myReader = new Scanner(GrammarFile);
-            System.out.println("Title: "+ myReader.nextLine());
 
             Grammar grammar = new Grammar(myReader);
 
@@ -33,8 +33,9 @@ public class Main {
             while(true) {
                 System.out.println("Loaded grammar, type a string to test it:");
                 String input = reader.readLine();
-                if(input == "exit") {
+                if("exit".equals(input)) {
                     System.out.println("Exiting.");
+                    System.exit(0);
                     return;
                 };
                 parser.TestString(input);

@@ -7,7 +7,11 @@ public class Grammar {
 
     public Set <Pair<Symbol,Pair<Symbol,Symbol>>> nonTerminalRules = new HashSet<>();
 
+    public boolean isSentence = false;
     public Grammar (Scanner scanner){
+        System.out.println("Title: "+ scanner.nextLine());
+        isSentence = scanner.nextLine().startsWith("s");
+
         while (scanner.hasNextLine()){
             String line = scanner.nextLine();
             String[] tokens = line.split(" ");
