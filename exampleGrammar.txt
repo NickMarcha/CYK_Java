@@ -1,7 +1,7 @@
 baaba language
 A - a
 B - b
-C - c
+C - a
 S - A B
 S - B C
 A - B A
