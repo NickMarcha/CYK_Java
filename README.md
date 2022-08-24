@@ -1,4 +1,4 @@
-# CYK_Java
+# CYK_Java [![Run on Repl.it](https://replit.com/badge/github/NickMarcha/CYK_Java)](https://replit.com/new/github/NickMarcha/CYK_Java)
 See exampleGrammar.txt and exampleGrammar2.txt to configure grammar
 Example runs
 ```
