@@ -11,7 +11,7 @@ public class Symbol {
     @Override
     public String toString() {
         return "S{" +
-                 symbol + '\'' +
+                 symbol+
                 '}';
     }
 
