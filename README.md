@@ -67,3 +67,9 @@ she eats a fish with a fork
 
 {she eats a fish with a fork} is included in Grammar
 ```
+
+## Some reflections
+- Math "arrays" starting at 1 instead of zero could probably warrant a proper abstraction.
+- Sets/list are implemented in many ways I'm not sure of the formula symbols coincide with properties (i.e. Uniqueness, indexing)
+- I don't think Tupples are well implemented in Java, especially when trying to perform set operations on them. Might be better when using libraries. The one I found was last updated 2012 so I just implemented the parts I needed myself. 
+- Was not certain of how to handle different rule-type objects in same list. Ended up keeping the seperate this time, previous implementation I made an interface which kept them in the same array. This time I was going for making them seem as though they were stored the same place behind and abstraction, asside from indexing this might be a better approach. 
